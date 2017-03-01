@@ -47,3 +47,94 @@ li {
 .scroll-inner {
 	padding: 0 20px 0;
 }
+
+/*加载动画*/
+.box {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	display: none;
+}
+
+.loader {
+	width: 30%;
+	height: 100px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loading {
+	position: relative;
+}
+
+.loading li {
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: #333333;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.loading li:nth-child(1) {
+    top: 15px;
+    left: 0px;
+    animation: loading .7s ease 0s infinite;
+}
+
+.loading li:nth-child(2) {
+    top: 10.6px;
+    left: 10.6px;
+    animation: loading .7s ease .1s infinite;
+}
+
+.loading li:nth-child(3) {
+    top: 0px;
+    left: 15px;
+    animation: loading .7s ease .2s infinite;
+}
+
+.loading li:nth-child(4) {
+    top: -10.6px;
+    left: 10.6px;
+    animation: loading .7s ease .3s infinite;
+}
+
+.loading li:nth-child(5) {
+    top: -15px;
+    left: 0px;
+    animation: loading .7s ease .4s infinite;
+}
+
+.loading li:nth-child(6) {
+    top: -10.6px;
+    left: -10.6px;
+    animation: loading .7s ease .5s infinite;
+}
+
+.loading li:nth-child(7) {
+    top: 0px;
+    left: -15px;
+    animation: loading .7s ease .6s infinite;
+}
+
+.loading li:nth-child(8) {
+    top: 10.6px;
+    left: -10.6px;
+    animation: loading .7s ease .7s infinite;
+}
+
+@-webkit-keyframes loading {
+	50%{
+		transform: scale(0.4);
+		opacity: 0.5;
+	}
+	100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
