@@ -18,11 +18,11 @@ addEventListener("load", function() {
 	}, 0);
 }, false); 
 
-window.onscroll = function() {
-	var scrTop = window.pagYoffset || document.documentElement.scrollTop || document.body.scrollTop; //滚动高度
-	var winH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight; //屏幕高度
+window.onscroll = function() {	
+	var scrTop = window.pageYOffset; // || document.documentElement.scrollTop || document.body.scrollTop;  //滚动高度
+	var winH = window.innerHeight; //|| document.documentElement.clientHeight; //屏幕高度
 //	console.log(scrTop + winH)
-	var eleH = document.documentElement.offsetHeight || document.body.offsetHeight; //元素高度
+	var eleH = document.documentElement.offsetHeight; //|| document.body.offsetHeight; //元素高度
 //	console.log(eleH);
 	var ani = document.getElementsByClassName('box')[0];
 	if (scrTop + winH == eleH) {
