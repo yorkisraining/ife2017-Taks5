@@ -19,7 +19,6 @@ addEventListener("load", function() {
 }, false); 
 
 window.onscroll = function() {
-	console.log();
 	var scrTop = window.pagYoffset || document.documentElement.scrollTop || document.body.scrollTop; //滚动高度
 	var winH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight; //屏幕高度
 //	console.log(scrTop + winH)

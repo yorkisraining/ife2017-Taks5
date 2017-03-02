@@ -82,59 +82,61 @@ li {
 .loading li:nth-child(1) {
     top: 15px;
     left: 0px;
-    animation: loading .7s ease 0s infinite;
+    -webkit-animation: loading .7s ease 0s infinite;
 }
 
 .loading li:nth-child(2) {
     top: 10.6px;
     left: 10.6px;
-    animation: loading .7s ease .1s infinite;
+    -webkit-animation: loading .7s ease .1s infinite;
 }
 
 .loading li:nth-child(3) {
     top: 0px;
     left: 15px;
-    animation: loading .7s ease .2s infinite;
+    -webkit-animation: loading .7s ease .2s infinite;
 }
 
 .loading li:nth-child(4) {
     top: -10.6px;
     left: 10.6px;
-    animation: loading .7s ease .3s infinite;
+    -webkit-animation: loading .7s ease .3s infinite;
 }
 
 .loading li:nth-child(5) {
     top: -15px;
     left: 0px;
-    animation: loading .7s ease .4s infinite;
+    -webkit-animation: loading .7s ease .4s infinite;
 }
 
 .loading li:nth-child(6) {
     top: -10.6px;
     left: -10.6px;
-    animation: loading .7s ease .5s infinite;
+    -webkit-animation: loading .7s ease .5s infinite;
 }
 
 .loading li:nth-child(7) {
     top: 0px;
     left: -15px;
-    animation: loading .7s ease .6s infinite;
+    -webkit-animation: loading .7s ease .6s infinite;
 }
 
 .loading li:nth-child(8) {
     top: 10.6px;
     left: -10.6px;
-    animation: loading .7s ease .7s infinite;
+    -webkit-animation: loading .7s ease .7s infinite;
 }
 
 @-webkit-keyframes loading {
 	50%{
-		transform: scale(0.4);
+		-webkit-transform: scale(0.4);
 		opacity: 0.5;
+		filter: 0.5;
 	}
 	100%{
-		transform: scale(1);
+		-webkit-transform: scale(1);
 		opacity: 1;
+		filter: 1;
 	}
 }
 
